@@ -171,3 +171,10 @@ pre {
   font-size: 0.7em;
   overflow-x: scroll;
 }
+
+.tilaukset img {
+  width: 64px;
+  height: 64px;
+  margin-right: 32px;
+  padding-top: 1em;
+}
