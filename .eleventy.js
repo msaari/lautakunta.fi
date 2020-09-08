@@ -5,7 +5,7 @@ const embedSoundCloud = require("eleventy-plugin-embed-soundcloud")
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("date", require("./filters/dates.js"))
-	//eleventyConfig.addPlugin(embedSoundCloud)
+	eleventyConfig.addPlugin(embedSoundCloud)
 
 	return {
 		dir: {

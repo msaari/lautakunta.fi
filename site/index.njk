@@ -3,7 +3,6 @@ layout: layouts/base.njk
 title: Lautakunta – Suomalainen lautapelipodcast
 ---
 
-<h1>Lautakunta</h1>
 <p>Lautakunta on suomalaisten lautapelibloggaajien podcast. Jaksoja ilmestyy kahden viikon välein ja aiheet pyörivät lautapelaamisen ympärillä.</p>
 
 <p>Uusia jaksoja ilmestyy maanantaisin kahden viikon välein. Kesällä podcast pitää pienen kesäloman, samoin joulukuussa.</p>
@@ -12,6 +11,7 @@ title: Lautakunta – Suomalainen lautapelipodcast
 <a href="http://feeds.soundcloud.com/users/soundcloud:users:201911010/sounds.rss">Podcastin RSS-syöte on tilattavissa</a>
 ja jaksot löytyvät myös <a href="http://youtube.com/lautapeliopas">Youtubesta Lautapelioppaan kanavalta</a>.</p>
 
+<p>Lautakunnan tekijöille voit antaa palautetta sähköpostilla <a href="mailto:lautakunta@lautapeliopas.fi">lautakunta@lautapeliopas.fi</a>.</p>
 <hr/>
 
 <h2>Jaksot</h2>
@@ -19,7 +19,7 @@ ja jaksot löytyvät myös <a href="http://youtube.com/lautapeliopas">Youtubesta
 {% for item in rssfeed.posts %}
   <li>
     <p class="meta">{{ item.pubDate | date }}</p>
-    <h3><a href="/posts/{{ item.path }}">{{ item.title }}</a></h3>
+    <h3><a href="/jaksot/{{ item.path }}">{{ item.title }}</a></h3>
   </li>
  {% endfor %}
 </ul>

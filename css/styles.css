@@ -4,6 +4,7 @@ $gentletext: #888;
 $verygentletext: #888;
 $heavytext: #111;
 $pagecolor: #fff;
+$headertext: #fff;
 
 
 html, body {
@@ -34,12 +35,36 @@ header,
 footer {
   padding-top: 2em;
   padding-bottom: 2em;
-  margin-bottom: 4em;
-  font-size: 0.7em;
+  margin-bottom: -1em;
   color: $gentletext;
 }
 header {
-  border-bottom: solid 1px $feather;
+  height: 250px;
+  position: relative;
+  color: $headertext;
+  font-family: Helvetica,Arial,sans-serif;
+}
+header h1 {
+  color: $headertext;
+  font-size: 2em;
+  font-weight: 700;
+}
+.nav a:link, .nav a:visited {
+  color: $headertext;
+  text-transform: uppercase;
+}
+header:after {
+  content: "";
+  background: rgb(247,108,29);
+  background: linear-gradient(180deg, rgba(247,108,29,1) 0%, rgba(250,217,97,1) 100%);
+  height: 100%;
+  right: 0;
+  left: 0;
+  bottom: 90px;
+  z-index: -1;
+  position: absolute;
+  display: block;
+  transform: skew(0deg,1deg);
 }
 footer {
   margin-top: 6em;
