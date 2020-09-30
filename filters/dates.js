@@ -3,5 +3,6 @@
 */
 module.exports = function (date) {
 	var d = new Date(date)
-	return d.getDate() + "." + d.getMonth() + "." + d.getUTCFullYear()
+	var month = parseInt(d.getMonth()) + 1
+	return d.getDate() + "." + month + "." + d.getUTCFullYear()
 }
